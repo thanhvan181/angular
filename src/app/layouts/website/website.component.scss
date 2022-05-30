@@ -1,0 +1,7 @@
+.body-container{
+    &:global('.container'){
+        margin: 0 auto;
+    }
+}
+
+

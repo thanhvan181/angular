@@ -38,7 +38,7 @@ export class ProductAddComponent implements OnInit {
       // call service add product
       this.productService.addProduct(this.product).subscribe(data => {
         // chuyển hướng router
-        this.router.navigateByUrl('/product');
+        this.router.navigateByUrl('/admin/product');
       })
     }
   }

@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  // isList: number;
+  isMenu: boolean = false;
+  isMenuBtn() {
+    this.isMenu = !this.isMenu;
   }
-
+  isSearch: boolean = false;
+  constructor() {}
+  ngOnInit(): void {}
 }

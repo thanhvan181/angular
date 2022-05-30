@@ -20,11 +20,20 @@ import { NzTableModule } from 'ng-zorro-antd/table'
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
-import { LayoutsComponent } from './layouts/layouts.component';
+
 import { AdminComponent } from './layouts/admin/admin.component';
 import { WebsiteComponent } from './layouts/website/website.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DashboarchComponent } from './pages/dashboarch/dashboarch.component';
+import { NavagitionComponent } from './layouts/admin/navagition/navagition.component';
+import { TableDataComponent } from './components/table-data/table-data.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { CasualComponent } from './components/casual/casual.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { ProductGridComponent } from './components/product-grid/product-grid.component';
+import { BestSellerComponent } from './components/best-seller/best-seller.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 registerLocaleData(en);
@@ -36,11 +45,20 @@ registerLocaleData(en);
     ProductAddComponent,
     ProductDetailComponent,
     NotFoundComponent,
-    LayoutsComponent,
+   
     AdminComponent,
     WebsiteComponent,
     HomeComponent,
     DashboarchComponent,
+    NavagitionComponent,
+    TableDataComponent,
+    BannerComponent,
+    CasualComponent,
+    HeroComponent,
+    ProductGridComponent,
+    BestSellerComponent,
+    FaqComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

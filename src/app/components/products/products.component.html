@@ -24,11 +24,12 @@
     </tr>
   </tbody>
 </table> -->
-<div class="table-operations">
+<!-- <div class="table-operations">
   <button nz-button (click)="sortByAge()">Sort age</button>
   <button nz-button (click)="resetFilters()">Clear filters</button>
-  <button nz-button (click)="resetSortAndFilters()">Clear filters and sorters</button>
-</div>
+  <button nz-button (click)="resetSortAndFilters()">Clear filters and sorters</button> -->
+<!-- </div> -->
+
 <nz-table #filterTable [nzData]="listOfData" nzTableLayout="fixed">
   <thead>
     <tr>
@@ -44,10 +45,18 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let  product of products">
-      <td>{{ data.name }}</td>
-      <td>{{ data.price }}</td>
-      <td>{{ data.status }}</td>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.status }}</td>
+      <td>
+        <button class="" (click)="onHandleRemove(product.id!)">
+          Delete
+        </button>
+        <a [routerLink]="['/adminproduct/edit', product.id]">Edit </a>
+      </td>
     </tr>
   </tbody>
 </nz-table>
+
+
