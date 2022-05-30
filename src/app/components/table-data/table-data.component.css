@@ -1,4 +1,8 @@
-.w-full{
+.w-full {
    position: relative;
    left: 0px;
+}
+
+.table-data {
+   margin-top: 40px;
 }

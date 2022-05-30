@@ -1,15 +1,14 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct } from '../../models/Product';
 import { ProductService } from '../../services/product.service';
-
 @Component({
-  selector: 'app-product-add',
-  templateUrl: './product-add.component.html',
-  styleUrls: ['./product-add.component.css']
+  selector: 'app-addproduct',
+  templateUrl: './addproduct.component.html',
+  styleUrls: ['./addproduct.component.css']
 })
-export class ProductAddComponent implements OnInit {
-  // @Output() createProduct = new EventEmitter<{ name: string, price: number }>();
+export class AddproductComponent implements OnInit {
+
   product: IProduct = {
     name: "",
     price: 0,

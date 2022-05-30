@@ -13,29 +13,34 @@ import { AdminComponent } from './layouts/admin/admin.component';
 import { WebsiteComponent } from './layouts/website/website.component';
 import { DashboarchComponent } from './pages/dashboarch/dashboarch.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AddproductComponent } from "./components/addproduct/addproduct.component"
 
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 const routes: Routes = [
-  
- 
-  {path: "admin", component: AdminComponent , children: [
-    { path: "", component: DashboarchComponent  },
-    { path: 'product', component: TableDataComponent },
-    { path: "product/add", component: ProductAddComponent },
-    { path: "product/:id", component: ProductDetailComponent },
-    { path: "product/edit/:id", component: ProductAddComponent },
 
-  ]},
-  {path: "", component: WebsiteComponent , children: [
-    { path: "home", component: HomeComponent },
-    // { path: 'product', component: ProductsComponent },
-    // { path: "product/add", component: ProductAddComponent },
-    // { path: "product/:id", component: ProductDetailComponent },
-    // { path: "product/edit/:id", component: ProductAddComponent },
 
-  ]},
+  {
+    path: "admin", component: AdminComponent, children: [
+      { path: "", component: DashboarchComponent },
+      { path: 'product', component: TableDataComponent },
+      { path: "product/add", component: AddproductComponent },
+      { path: "product/:id", component: ProductDetailComponent },
+      { path: "product/edit/:id", component: ProductDetailComponent },
+
+    ]
+  },
+  {
+    path: "", component: WebsiteComponent, children: [
+      { path: "home", component: HomeComponent },
+      // { path: 'product', component: ProductsComponent },
+      // { path: "product/add", component: ProductAddComponent },
+      // { path: "product/:id", component: ProductDetailComponent },
+      // { path: "product/edit/:id", component: ProductAddComponent },
+
+    ]
+  },
   { path: "**", component: NotFoundComponent },
 ];
 

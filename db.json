@@ -1,28 +1,32 @@
 {
   "products": [
     {
-      "name": "product A",
-      "price": 1232132131,
+      "id": 1,
+      "name": "ProductA",
+      "price": 3444,
       "status": true,
-      "id": 3
+      "desc": "product"
     },
     {
-      "name": "12321321",
-      "price": 321313131,
+      "id": 2,
+      "name": "ProductM",
+      "price": 3444,
       "status": true,
+      "desc": "product"
+    },
+    {
+      "id": 3,
+      "name": "ProductB",
+      "price": 3444,
+      "status": false,
+      "desc": "product"
+    },
+    {
+      "name": "Giay Dep",
+      "price": "200.000",
+      "status": true,
+      "desc": "Chat luong oki",
       "id": 4
-    },
-    {
-      "name": "PRoduct C",
-      "price": 123321312312,
-      "status": true,
-      "id": 5
-    },
-    {
-      "name": "thanhvan",
-      "price": 33,
-      "status": true,
-      "id": 6
     }
   ]
 }

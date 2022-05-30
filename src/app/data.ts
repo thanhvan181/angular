@@ -1,15 +1,83 @@
 const data = [
     {
         id: 1,
-        name: "product A",
-        price: 200,
-        status: false
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
     },
     {
         id: 2,
-        name: "product B",
-        price: 300,
-        status: true
-    }
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
+    {
+        id: 3,
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
+    {
+        id: 4,
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
+    {
+        id: 5,
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
+    {
+        id: 6,
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
+    {
+        id: 7,
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
+    {
+        id: 8,
+        product_name: "UX Design & Visual Strategy",
+        sub_name: "Herman Group",
+        status: "50%",
+        price: 3000,
+        desc: "Ky nang",
+
+
+    },
 ];
 export default data;

@@ -1,20 +1,20 @@
 <div class="w-full">
     <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Add to Products</h2>
     <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
-        <form action="">
+        <form action="" (ngSubmit)="onSubmit()" #formAdd="ngForm">
             <div class="mb-5">
                 <label for="name" class="block mb-2 font-bold text-gray-600">Name</label>
-                <input type="text" id="name" name="name" placeholder="name."
+                <input type="text" id="name" name="name" placeholder="name." [(ngModel)]="product.name"
                     class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
             <div class="mb-5">
                 <label for="name" class="block mb-2 font-bold text-gray-600">Price</label>
-                <input type="text" id="name" name="name" placeholder="price."
+                <input type="text" id="name" name="name" placeholder="price." [(ngModel)]="product.price"
                     class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
             <div class="mb-5">
                 <label for="name" class="block mb-2 font-bold text-gray-600">Desc</label>
-                <input type="text" id="name" name="name" placeholder="desc." {{product.name}}
+                <input type="text" id="name" name="name" placeholder="desc." [(ngModel)]="product.desc"
                     class="border border-gray-300 shadow p-3 w-full rounded mb-">
             </div>
 

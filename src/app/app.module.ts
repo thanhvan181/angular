@@ -34,6 +34,7 @@ import { ProductGridComponent } from './components/product-grid/product-grid.com
 import { BestSellerComponent } from './components/best-seller/best-seller.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AddproductComponent } from './components/addproduct/addproduct.component';
 
 
 registerLocaleData(en);
@@ -59,6 +60,7 @@ registerLocaleData(en);
     BestSellerComponent,
     FaqComponent,
     FooterComponent,
+    AddproductComponent,
   ],
   imports: [
     BrowserModule,
